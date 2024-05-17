@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+.asofta_general_maintance{
+    background-color: #FAFFE9 ;
+    /* height: 595px; */
+    width: 842px;
+    margin: auto;
+    /* border: 3px solid black; */
+    color: #464747;
+}
+
+.top_portion{
+    display: flex;
+}
+
+.logo img{
+    height: 41px;
+    width: 46px;
+    margin: 10px 0px 0px 21px;
+    /* border: 1px solid black; */
+}
+
+.top_title{
+    /* padding: 11.74px 189px 0px 190.59px; */
+    margin: auto;
+
+}
+.heading_portion{
+    background-color: rgb(199, 203, 206);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* height: 28.19px; */
+    /* width: 315.41px; */
+    /* border: 5px solid rgb(233, 11, 11); */
+    padding: 3px 40px 3px 47px;
+}
+.top_heading{
+    /* color: #464747; */
+    font-weight: 700;
+    font-size: 15px;
+    /* line-height: 17.58px; */
+    text-align: center;
+
+}
+
+.line{
+    height: 4px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #464747;
+    border-top-right-radius: 60px;
+
+}
+
+/* ========button_portion======== */
+.button_portion{
+    display: flex;
+    margin: 0px 20px 0px 100px;
+    /* border: 3px solid red; */
+}
+.access_btn_portion{
+    display: flex;
+    /* position: relative; */
+    margin-right: 31px;
+    width: 100%;
+}
+.access_btn_img{
+    width: 27px;
+    height: 25px;
+    position: relative;
+    padding-bottom: 0;
+    margin: 0;
+    left: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+
+}
+.access_btn_img img{
+    width: 23px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #A8BF3D;
+    box-shadow: 1px 3px 1px 0px;
+}
+.access_btn{
+    align-items: center;
+    padding-top: 2px;
+}
+.access_btn .btn{
+    color: #ffffff;
+    width: 87PX;
+    height: 19PX;
+    font-size: 10px;
+    font-weight: 700px;
+    line-height: 11.72px;
+    background-color: #A8BF3D;
+    /* position: absolute; */
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+}
+
+ /* ===============Machine parts=========== */
+ .machine_parts{
+    /* max-width: 518px; */
+    /* height: 711px; */
+    /* width: 100%; */
+    /* margin: auto; */
+    border: 2px solid #A8BF3D;
+    margin: 3px 33px 37px 44px ;
+    border-radius: 17px;
+ }
+ .machine_portion{
+    /* width: 50%; */
+    display: flex;
+    margin-top: 10px;
+ }
+ .machine_parts_portion{
+    /* border-right: 2px solid gray; */
+    border-radius: 17px;
+    text-align: center; 
+    padding-left: 25px;
+    width: 100%;
+ }
+ .machine_parts_portion .m_parts_name{
+     font-size: 15px;
+     font-weight: 700;
+}
+.m_parts_access{
+    border-right: 2px solid #A8BF3D;
+    margin-bottom: 20px;
+
+}
+.machine_image_btn{
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    /* border: 2px solid gray; */
+    align-items: center;
+}
+.machine_image_btn .m_img{
+    position: relative;
+    left: 45px;
+    bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 3px 1px 0px;
+    border-radius: 50%;
+}
+.machine_image_btn .m_img img{
+    width: 57px;
+    height: 57px;
+}
+.process_button_text{
+    width: 80%;
+}
+.process_button{
+    width: 80%;
+    /* height: 34px; */
+    display: flex;
+    margin: auto;
+    border-radius: 13px;
+    border: 2px solid #A8BF3D;
+}
+.process_button .p_btn{
+    margin: auto;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+}
+.p_btn{
+    padding: 2px 0px ;
+}
+.p_btn .btn{
+    border-radius: 50%;
+    border: none;
+}
+.p_btn .btn img{
+    height: 20px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 1px 0px;
+}
+.m_text{
+    width: 80px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.button_name1{
+    color: #000000;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+    right: 10px;
+}
+.button_name2{
+    color: #000000;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+    left: 25px;
+}
+.common{
+    border-bottom: 2px solid #A8BF3D;
+}

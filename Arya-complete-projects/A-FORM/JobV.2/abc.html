@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .jw-exp-option .exp-label {
+            color: #fff !important;
+        }
+
+        .jw-exp-option label {
+            width: 100%;
+            padding-left: 90px;
+            height: 65px;
+            color: #777777;
+            font-size: 15px;
+            line-height: 65px;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 12px;
+            display: inline-block;
+            border: 2px solid #e5e5e5;
+        }
+
+        .jw-exp-option .checkmark-border:before {
+            content: "";
+            position: absolute;
+            height: 38px;
+            width: 38px;
+            border-radius: 100%;
+            left: 30px;
+            top: 13px;
+            background-color: #fff;
+            border: 1px solid #c3e8ff;
+        }
+
+        .jw-exp-option .checkmark-border:after {
+            top: 20px;
+            left: 37px;
+            width: 24px;
+            content: "";
+            height: 24px;
+            display: none;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #10b467;
+        }
+
+        .jw-exp-option .exp-option-box {
+            display: none;
+        }
+
+        .jw-exp-option .exp-label {
+            display: block;
+        }
+
+        .jw-exp-option .exp-option-box:checked~.checkmark-border:after {
+            display: block;
+        }
+
+        .jw-exp-spcial {
+            margin: 0 -7px 15px;
+        }
+
+        .jw-exp-spcial li {
+            width: 47%;
+            float: left;
+            font-size: 17px;
+            margin: 0px 7px;
+        }
+
+        .jw-exp-spcial li label {
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .jw-exp-spcial li:nth-child(1) {
+            border: 2px solid #2cb0f1;
+        }
+
+        .jw-exp-spcial li:nth-child(1) label {
+            color: #2cb0f1;
+        }
+
+        .jw-exp-spcial li:nth-child(1) .checkmark-border:before {
+            border: 1px solid #2cb0f1;
+        }
+
+        .jw-exp-spcial li:nth-child(2) {
+            border: 2px solid #2cf156;
+        }
+
+        .jw-exp-spcial li:nth-child(2) label {
+            color: #2cf156;
+        }
+
+        .jw-exp-spcial li:nth-child(2) .checkmark-border:before {
+            border: 1px solid #2cf156;
+        }
+
+        .jw-exp-option .exp-option-box {
+            display: none;
+        }
+
+        .jw-exp-option .exp-option-box:checked~.checkmark-border:after {
+            display: block;
+        }
+
+        .wizard-content-1 .job-wizard-right-area .jw-gender-select .checkmark-border:before {
+            content: "";
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            left: -10px;
+            top: -2px;
+            background-color: #fff;
+            border: 2px solid #969696;
+        }
+
+        .wizard-content-1 .job-wizard-right-area .jw-gender-select .checkmark-border:after {
+            top: 3px;
+            left: -5px;
+            width: 15px;
+            content: "";
+            height: 15px;
+            display: none;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #d8d8d8;
+        }
+
+        .wizard-content-1 .job-wizard-right-area .gender-check:checked~.checkmark-border:after {
+            display: block;
+        }
+
+        .jw-exp-option .checkmark-border:before {
+            content: "";
+            position: absolute;
+            height: 38px;
+            width: 38px;
+            border-radius: 100%;
+            left: 30px;
+            top: 13px;
+            background-color: #fff;
+            border: 1px solid #c3e8ff;
+        }
+
+        .jw-exp-option .checkmark-border:after {
+            top: 20px;
+            left: 37px;
+            width: 24px;
+            content: "";
+            height: 24px;
+            display: none;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #10b467;
+        }
+
+        .jw-exp-option .exp-option-box {
+            display: none;
+        }
+
+        .jw-exp-option .exp-label {
+            display: block;
+        }
+
+        .jw-exp-option .exp-option-box:checked~.checkmark-border:after {
+            display: block;
+        }
+
+        .jw-exp-spcial li:nth-child(1) .checkmark-border:before {
+            border: 1px solid #2cb0f1;
+        }
+
+        .jw-exp-spcial li:nth-child(2) .checkmark-border:before {
+            border: 1px solid #2cf156;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jw-exp-option jw-exp-spcial clearfix">
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="specs_1" value="The art of Networking" class="exp-option-box"
+                        checked="checked">
+                    <span class="">The art of Networking</span>
+                    <span class="checkmark-border">aaaa</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="specs_1" value="Verbally Communicate" class="exp-option-box">
+                    <span class="">Verbally Communicate</span>
+                    <span class="checkmark-border"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

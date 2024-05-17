@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0228)https://static.sojern.com/cip/a/33.html?p=www.choicehotels.com/about/brands&hpid=&sha256_eml=&ccid=7RBRNDMGFx9lG_u3ntUW7.&hd1=&hd2=&hc1=&hs1=&hn1=&t=1&hr=1&hd=0&hpr=&hb=&hp=&hconfno=&ffl=no&hl=&hdc=&hcu=&pt=Our%20Brands&shell=US -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+    <title>Choice Hotels - 33</title>
+    <script src="./js" async=""></script><script src="./hasher.js.download"></script>
+    <script src="./create_params.js.download"></script>
+    <script src="./radmap.js.download"></script>
+  <script type="text/javascript" async="" src="./3"></script><script type="text/javascript" async="" src="./1144"></script><script type="text/javascript" async="">var i = document.createElement('img');    i.setAttribute('alt', '');    i.setAttribute('height', '1');    i.setAttribute('width', '1');    i.setAttribute('style', 'display: none;');    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_hm=bUy87EQQEkSt_Sl_3l9bfA&google_nid=sojern_adh');    document.body.appendChild(i);</script><script type="text/javascript" async="" src="./f(7).txt"></script></head>
+  <body>  
+    <script>
+    /* version 20230405.1 */
+    /* Ed updating CN pixel 353388 logic for debugging and add 1144 */
+    /* 
+      three shells: 
+      US - not geo based. Users from anywhere landing on the US page will trigger the pixel fire.
+      Non-EU International - not geo based. Users from anywhere landing on (MX, CA, AU, NZ, IN) pages will trigger the pixel fire.
+      EU - geo based. Only users from the EU landing on the EU countries' pages will trigger the pixel fire. 
+    */
+
+    
+   function fireContainerPixel(container_id, these_params) {
+      var params = these_params;
+      params.vid = "hot";
+      params.eml = "";
+      var paramsArr = [];
+      params.et = {
+        "HOME_PAGE": null,
+        "SEARCH": "hs",
+        "PRODUCT": "hpr",
+        "SHOPPING_CART": "hcart",
+        "CONVERSION": "hc",
+        "TRACKING": null
+      } [params.pt] || '';
+      var pl = document.createElement('script');
+      for(key in params) {
+        paramsArr.push(key + '=' + encodeURIComponent(params[key]))
+      };
+      pl.type = 'text/javascript';
+      pl.async = true;
+    
+      pl.src = 'https://beacon.sojern.com/pixel/cp/' + container_id + '?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    }
+    
+    function fireStandardPixel(pixel_id, these_params) {
+      (function() {
+        var params = these_params;
+    
+        /* Please do not modify the below code. */
+        var paramsArr = [];
+        var pl = document.createElement('script');
+        params.vid = "hot";
+    
+        for(key in params) {
+          paramsArr.push(key + '=' + encodeURIComponent(params[key]))
+        };
+        pl.type = 'text/javascript';
+        pl.async = true;
+        pl.src = 'https://beacon.sojern.com/pixel/p/' + pixel_id + '?f_v=v6_js&p_v=1&' + paramsArr.join('&');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+      })();
+    }
+    
+    (function() {
+      var hParams = window.location.search.slice(1).split('&');
+      var params = sjrn_create_params(hParams);
+      params.pc = window.location.search
+      var is_fire = true
+    
+      var ctry = "us";
+      var lang = "en";
+      var pix_type = {
+        "HOME_PAGE": 0,
+        "TRACKING": 1,
+        "PRODUCT": 2,
+        "SEARCH": 3,
+        "SHOPPING_CART": 4,
+        "CONVERSION": 5
+      };
+    
+      oldp = params.p;
+      newp = document.createElement('a');
+      newp.href = params.p;
+      params.domain = newp.pathname;
+      params.p = newp.origin + params.domain;
+    
+      var ctry_regx = new RegExp(/\/[\w]{2}-[\w]{2}(\/|$)/);
+      var has_match = params.domain.match(ctry_regx);
+      params.l = has_match ? has_match[0].split('-')[0].replace(/\//g, '') : "en";
+      ctry = has_match ? has_match[0].toLowerCase().replace(/\//g, '').split('-')[1] : ctry;
+      var ed_ctry = ctry;
+    
+      // use the country of the property instead of from url
+      ctry = typeof(params.hn1) !== "undefined" && params.hn1 > "" ? params.hn1.toLowerCase() : ctry;
+    
+      if(typeof params.hn1 !== "undefined" && params.hn1 == "MX") {
+        /* Ed - force hcu to mxn */
+        params.hcu = "MXN";
+      }
+      
+    
+      var hpid_prefix = typeof(params.hpid) !== "undefined" && params.hpid > "" ? params.hpid.substring(0, 2) : "";
+    
+      if(params.pt.includes("search")) {
+        params.pt = "SEARCH";
+        params.hpid = ""; /* remove list of all props in dest search only */
+      } else if(params.pt.includes("Hotel List")) {
+        params.pt = "SEARCH";
+        params.hpid = ""; /* remove list of all props in dest search only */        
+      } else if(params.pt.includes("Property")) {
+        params.pt = "PRODUCT";
+      } else if(params.pt.includes("Home")) {
+        params.pt = "PRODUCT";        
+      } else if(params.pt.includes("rates")) {
+        params.pt = "SEARCH";
+      } else if(params.pt.includes("Availability")) {
+        params.pt = "SEARCH";        
+      } else if(params.domain.includes("rates")) {
+        params.pt = "SEARCH";        
+      } else if(params.domain.includes("guestdata")) {
+        params.pt = "SHOPPING_CART";
+      } else if(params.domain.includes("confirmation") && !params.domain.includes("email-confirmation")) {
+        // params.cid = "Debug:" + window.location.search, debug undefined hconfno's
+        if(typeof params.hconfno !== "undefined" && params.hconfno.length > 6 && params.hconfno) {
+          params.pt = "CONVERSION";
+          params.hconfno = params.hconfno.slice(0, -6);
+        } else {
+          params.pt = "TRACKING";
+        }
+      } else if(params.domain.length == 6 || params.domain.length == 1) {
+        params.pt = "HOME_PAGE";
+      }
+      
+      if (params.pt === "CONVERSION" && params.hd1 && params.hd2 && params.hd1.match(/\d{4}-\d{2}-\d{2}/)  && params.hd2.match(/\d{4}-\d{2}-\d{2}/)) {
+        if (new Date(params.hd1).getTime() >= new Date(params.hd2).getTime() && params.hd) {
+          params.hd2 = new Date(new Date(params.hd1).getTime() + (86400*1000*parseInt(params.hd))).toISOString().split("T")[0]
+        }
+      }
+      
+      
+      if (params.hpid && params.hpid.toUpperCase() === "FL276" && params.pt === "CONVERSION" && !params.hp) {
+        is_fire = false
+      }
+    
+      
+      // The country to identify the property is not accurate, so just fire to two containers.
+      if (is_fire) {
+      if(ctry != "us" && ctry != "usa") {
+        fireContainerPixel(245, params)
+      }
+      fireContainerPixel(3, params)
+      }
+      try{
+        if (params.hpid in radmap){
+          fireContainerPixel(47, params)
+        }
+      } catch(e){}
+     
+      // std pixel arrays by country:  [hp, trk, prod, srch, cart, conv]
+      var std_pixs = {
+        us: ["73719", "", "73719", "73719", "73719", "4487"],
+        ca: ["5134", "", "5134", "5134", "5134", "5133"]
+      };
+    
+      if(typeof std_pixs[ctry] !== "undefined" && std_pixs[ctry][pix_type[params.pt]] > "") {
+        var pixel_id = std_pixs[ctry][pix_type[params.pt]]
+        fireStandardPixel(pixel_id, params)
+      } else {
+        /* Ed debug what pixels we aren't catching */
+        params.cid = "CHOICE_202304|" + params.cid + "|pt=" + params.pt;
+        fireStandardPixel("1144", params);
+      }
+    
+      /* Debug CN Pixel */
+      if(1 > 0) {
+        hpid_prefix = hpid_prefix.toUpperCase();
+    
+        if((typeof(params.hconfno) !== "undefined" && params.hconfno > "") && (hpid_prefix == "CN" || ed_ctry == "ca")) {
+          fireStandardPixel("353388", params);
+        }
+      }
+      /* End Debug Pixel */
+    
+      /* Adform Kathy 2023-06-15 */
+      if(typeof params.hpid !== "unknown" && (params.hpid == "NC008" || params.hpid == "FLC09")) {
+        if(params.pt !== "CONVERSION") {
+          window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+          window._adftrack.push({
+            HttpHost: 'a2.adform.net',
+            pm: 2875818
+          });
+          (function() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          })();
+        }
+    
+        window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+    
+        var pagename = "";
+        var AfId = 0;
+    
+        if(params.hpid == "NC008") {
+          /* Quality Inn Near High Point University */
+          AfId = 3026703;
+        } else if(params.hpid == "FLC09") {
+          /* Comfort Inn and Suites Clearwater */
+          AfId = 3033761;
+    
+          if(params.pt == "PRODUCT") {
+            pagename = params.hpid == "NC008" ? encodeURIComponent('Quality Inn Near High Point University -- PRODUCT 259271') : params.hpid == "FLC09" ? encodeURIComponent('Comfort Inn and Suites Clearwater -- PRODUCT 259289') : "";
+            window._adftrack.push({
+              HttpHost: 'a2.adform.net',
+              pm: AfId,
+              divider: encodeURIComponent('|'),
+              pagename: pagename
+            });
+          } else if(params.pt == "SEARCH") {
+            pagename = params.hpid == "NC008" ? encodeURIComponent('Quality Inn Near High Point University -- SEARCH 290344') : params.hpid == "FLC09" ? encodeURIComponent('Comfort Inn and Suites Clearwater -- SEARCH 290350') : "";
+            window._adftrack.push({
+              HttpHost: 'a2.adform.net',
+              pm: AfId,
+              divider: encodeURIComponent('|'),
+              pagename: pagename
+            });
+          } else if(params.pt == "CONVERSION") {
+            pagename = params.hpid == "NC008" ? encodeURIComponent('Quality Inn Near High Point University -- CONVERSION 259269') : params.hpid == "FLC09" ? encodeURIComponent('Comfort Inn and Suites Clearwater -- CONVERSION 259287') : "";
+            window._adftrack.push({
+              HttpHost: 'a2.adform.net',
+              pm: AfId,
+              divider: encodeURIComponent('|'),
+              pagename: pagename,
+              order: {
+                sales: params.hp.toString(),
+                orderid: params.hconfno
+              }
+            });
+          } else {
+            /* HP */
+            pagename = params.hpid == "110245" ? encodeURIComponent('Quality Inn Near High Point University -- HOME_PAGE 259270') : params.hpid == "FLC09" ? encodeURIComponent('Comfort Inn and Suites Clearwater -- HOME_PAGE 259288') : "";
+            window._adftrack.push({
+              HttpHost: 'a2.adform.net',
+              pm: AfId,
+              divider: encodeURIComponent('|'),
+              pagename: pagename
+            });
+          }
+    
+          console.log("saf: ", window._adftrack);
+          (function() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          })();
+        }
+      }
+    })();
+    </script>
+  
+<iframe allow="join-ad-interest-group" data-tagging-id="AW-14242" data-load-time="1704171175225" height="0" width="0" src="./14242(7).html" style="display: none; visibility: hidden;"></iframe><img alt="" height="1" width="1" style="display: none;" src="./pixel"></body></html>

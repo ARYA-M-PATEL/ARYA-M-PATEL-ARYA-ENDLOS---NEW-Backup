@@ -1,0 +1,1035 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.asofta_general_maintance {
+    background-color: #FAFFE9;
+    /* min-height: 1280px; */
+    min-height: 1920px;
+    /* max-height: 1920px; */
+    /* max-height: 1920px; */
+    max-width: 1080px;
+    /* max-width: 768px; */
+    margin: 0 auto;
+    border: 5px solid #000000;
+    color: #464747;
+}
+
+.button_portion {
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    margin-top: 15px;
+}
+
+.access_btn_portion {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.access_btn_img {
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.access_btn {
+    position: absolute;
+    left: 55px;
+    width: 80%;
+}
+
+.access_btn_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f3f5eb;
+    padding: 3px;
+}
+
+.access_btn .btn {
+    width: 85%;
+    padding: 12px 12px 12px 12px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #A8BF3D;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ===============Machine parts=========== */
+.machine_parts {
+    border: 3px solid #A8BF3D;
+    margin: 60px 30px 30px 30px;
+    border-radius: 17px;
+    text-align: center;
+}
+
+.machine_portion {
+    display: flex;
+}
+
+.machine_parts_portion {
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+}
+
+.parts_head_portion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.machine_parts_portion .m_parts_name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.m_parts_access {
+    padding-right: 10px;
+    border-right: 3px solid #A8BF3D;
+    margin: 20px 0px;
+}
+
+.m_parts_access_2 {
+    margin: 20px 0px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+span {
+    margin: auto;
+}
+
+.machine_image_btn {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.machine_image_btn .m_img {
+    width: 85px;
+    height: 85px;
+    z-index: 2;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 2px 1px 0px;
+    border-radius: 50%;
+    position: relative;
+    right: 9px;
+}
+
+.machine_image_btn .m_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.d_sens {
+    width: 100%;
+}
+
+.sensors {
+    display: flex;
+    gap: 10%;
+    left: 3%;
+}
+
+.round {
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FAFFE9;
+    /* position: relative; */
+}
+
+.round1 {
+    border: 2px solid #A8BF3D;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #A8BF3D;
+    /* position: relative; */
+}
+
+.round:hover {
+    background-color: #A8BF3D;
+    border: none;
+}
+
+.ftd_text {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    right: 15%;
+}
+
+.bd_text {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 18.5%;
+}
+
+.lrd {
+    /* margin-top: 38%; */
+}
+
+.ld_text {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    right: 15%;
+}
+
+.rd_text {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 21%;
+}
+
+.emergency_switch {
+    width: 40%;
+    margin-left: 10%;
+    position: relative;
+    left: 23%;
+}
+
+.ems_text {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 14px;
+    left: 3%;
+}
+
+.process_button_text {
+    position: absolute;
+    width: 88%;
+    align-items: center;
+    text-align: center;
+    left: 62px;
+    bottom: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.process_button {
+    width: 99%;
+    display: flex;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px;
+    padding: 3px 0px;
+    position: absolute;
+}
+
+.p_btn {
+    margin: auto;
+    border-radius: 50%;
+}
+
+.p_btn .btn {
+    border-radius: 50%;
+    border: none;
+    display: flex;
+
+}
+
+.p_btn .btn img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.m_text {
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    left: 15px;
+}
+
+.input_bar {
+    z-index: 1;
+    position: absolute;
+    left: 93px;
+}
+
+.input_bar input {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.door_sens_portion {
+    display: flex;
+}
+
+.fd_text {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    left: 34%;
+}
+
+.entry_sensor {
+    width: 97%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    /* padding-right: 200px; */
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px;
+    padding: 3px 0px;
+    position: relative;
+}
+
+.gss {
+    display: flex;
+    gap: 80px;
+}
+
+.shredder_name {
+    width: 68%;
+    padding: 0;
+    margin: 0;
+}
+
+.error_btn {
+    /* display: flex; */
+    gap: 35%;
+}
+
+.lce_btn1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 1.5%;
+}
+
+.lce_btn2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 16%;
+}
+
+.error_btn2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+    left: 47px;
+}
+
+.sensor_btn1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    right: 9.5%;
+}
+
+.sensor_btn2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 5%;
+}
+
+.sensor_btn3 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 17.5%;
+}
+
+.em_btn {
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.sorter_sens {
+    position: relative;
+    left: 9.5%;
+}
+
+.sens_m_text {
+    position: relative;
+    left: 9%;
+    top: 3px;
+}
+
+.resolve_btn {
+    margin: 15px 0px 35px 0px;
+    position: relative;
+    left: 8%;
+}
+
+.resolve_btn .btn {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    background-color: #A8BF3D;
+    border: none;
+    border-radius: 20px;
+}
+
+.resolve_btn .btn a {
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.gs_btn1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 3%;
+}
+
+.gs_btn2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 14%;
+}
+
+.g_btn1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 10%;
+}
+
+.g_btn2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 8%;
+}
+
+.flap_error_1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 6%;
+}
+
+.flap_error_2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 20%;
+}
+
+.flap_error_3 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 6%;
+}
+
+.flap_error_4 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 18%;
+}
+
+.gateway_error_btn {
+    display: flex;
+    gap: 35%;
+}
+
+.gateway_error_1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 10%;
+}
+
+.gateway_error_2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 16%;
+}
+
+.ps_btn1 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 4%;
+}
+
+.ps_btn2 {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 15px;
+    left: 15%;
+}
+
+.common {
+    border-bottom: 2px solid #A8BF3D;
+}
+
+.storage_name {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.storage_count {
+    width: 70%;
+}
+
+.storage_number {
+    font-size: 25px;
+}
+
+.plastic_storage_count {
+    color: #C70E0E;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    .machine_parts_portion .m_parts_name {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .machine_image_btn .m_img {
+        width: 65px;
+        height: 65px;
+        z-index: 2;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 1px 2px 1px 0px;
+        border-radius: 50%;
+        position: relative;
+        right: 9px;
+    }
+
+    .machine_image_btn .m_img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .lce_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 1.5%;
+    }
+
+    .lce_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 16%;
+    }
+
+
+    .sensor_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        right: 3%;
+    }
+
+    .sensor_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 5%;
+    }
+
+    .sensor_btn3 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 11%;
+    }
+
+    .input_bar {
+        z-index: 1;
+        position: absolute;
+        left: 63px;
+    }
+
+    .input_bar input {
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 15px;
+        border-radius: 10px;
+        height: 25px;
+    }
+
+    .round {
+        border: 2px solid red;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background-color: #FAFFE9;
+    }
+
+    .round1 {
+        border: 2px solid #A8BF3D;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background-color: #A8BF3D;
+    }
+
+    .process_button_text {
+        position: absolute;
+        width: 88%;
+        align-items: center;
+        text-align: center;
+        left: 47px;
+        bottom: 50px;
+        margin: auto;
+    }
+
+    .process_button {
+        width: 99%;
+        display: flex;
+        margin-bottom: 15px;
+        padding-right: 20px;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 0px 2px 2px 2px;
+        padding: 3px 0px;
+        position: absolute;
+    }
+
+    .p_btn .btn img {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    .m_text {
+        font-size: 13px;
+        font-weight: 700;
+        position: relative;
+        left: 15px;
+    }
+
+    .fd_text {
+        color: #000000;
+        font-size: 9px;
+        font-weight: 700;
+        position: relative;
+        left: 33%;
+    }
+
+    .em_btn {
+        border: 2px solid red;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    .gs_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 9%;
+    }
+
+    .gs_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 10%;
+    }
+
+    .g_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 17%;
+    }
+
+    .g_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 3%;
+    }
+
+    .flap_error_1 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 15%;
+    }
+
+    .flap_error_2 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 16%;
+    }
+
+    .flap_error_3 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 14%;
+    }
+
+    .flap_error_4 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 14%;
+    }
+
+    .gateway_error_1 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 21%;
+    }
+
+    .gateway_error_2 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 12%;
+    }
+
+    .ps_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 9%;
+    }
+
+    .ps_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 11%;
+    }
+
+    .al_shredder {
+        margin-top: -8px;
+    }
+}
+
+
+@media only screen and (min-width: 801px) and (max-width: 960px) {
+    .machine_parts_portion .m_parts_name {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .machine_image_btn .m_img {
+        width: 70px;
+        height: 70px;
+        z-index: 2;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 1px 2px 1px 0px;
+        border-radius: 50%;
+        position: relative;
+        right: 10px;
+    }
+
+    .machine_image_btn .m_img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .lce_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 1.5%;
+    }
+
+    .lce_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 16%;
+    }
+
+
+    .sensor_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        right: 3%;
+    }
+
+    .sensor_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 5%;
+    }
+
+    .sensor_btn3 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 11%;
+    }
+
+    .input_bar {
+        z-index: 1;
+        position: absolute;
+        left: 63px;
+    }
+
+    .input_bar input {
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 15px;
+        border-radius: 10px;
+        height: 25px;
+    }
+
+    .round {
+        border: 2px solid red;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background-color: #FAFFE9;
+    }
+
+    .round1 {
+        border: 2px solid #A8BF3D;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background-color: #A8BF3D;
+    }
+
+    .process_button_text {
+        position: absolute;
+        width: 88%;
+        align-items: center;
+        text-align: center;
+        left: 47px;
+        bottom: 50px;
+        margin: auto;
+    }
+
+    .process_button {
+        width: 99%;
+        display: flex;
+        margin-bottom: 15px;
+        padding-right: 20px;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 0px 2px 2px 2px;
+        padding: 3px 0px;
+        position: absolute;
+    }
+
+    .p_btn .btn img {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    .m_text {
+        font-size: 13px;
+        font-weight: 700;
+        position: relative;
+        left: 15px;
+    }
+
+    .fd_text {
+        color: #000000;
+        font-size: 9px;
+        font-weight: 700;
+        position: relative;
+        left: 33%;
+    }
+
+    .em_btn {
+        border: 2px solid red;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    .gs_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 9%;
+    }
+
+    .gs_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 10%;
+    }
+
+    .g_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 17%;
+    }
+
+    .g_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 3%;
+    }
+
+    .flap_error_1 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 15%;
+    }
+
+    .flap_error_2 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 16%;
+    }
+
+    .flap_error_3 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 14%;
+    }
+
+    .flap_error_4 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 14%;
+    }
+
+    .gateway_error_1 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 21%;
+    }
+
+    .gateway_error_2 {
+        color: #000000;
+        position: relative;
+        bottom: 10px;
+        left: 12%;
+    }
+
+    .ps_btn1 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 9%;
+    }
+
+    .ps_btn2 {
+        color: #000000;
+        position: relative;
+        bottom: 15px;
+        left: 11%;
+    }
+
+    .al_shredder {
+        margin-top: -8px;
+    }
+}

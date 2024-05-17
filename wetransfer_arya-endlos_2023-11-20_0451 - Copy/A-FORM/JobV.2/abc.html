@@ -1,0 +1,206 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            font-size: 20px;
+            color: black;
+        }
+        .radio-btn {
+            width: 100%;
+            padding-left: 80px;
+            height: 65px;
+            color: #777777;
+            font-size: 15px;
+            line-height: 65px;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 12px;
+            display: inline-block;
+            /* border: 2px solid #e5e5e5; */
+        }
+        .radio-btn span{
+
+        }
+
+        .checkmark-border:before {
+            content: "";
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            left: 30px;
+            top: 23px;
+            background-color: #fff;
+            border: 1px solid #c3e8ff;
+        }
+
+        .checkmark-border:after {
+            top: 27.5px;
+            left: 34.5px;
+            width: 17px;
+            height: 17px;
+            content: "";
+            display: none;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #10b467;
+        }
+
+        .exp-option-box:checked~.checkmark-border:after {
+            display: block;
+        }
+
+        li {
+            float: left;
+        }
+
+        li label {
+            border: none;
+            margin-bottom: 0;
+        }
+
+        li:nth-child(1) .checkmark-border:before {
+            border: 1px solid #2cb0f1;
+        }
+
+        li:nth-child(2) .checkmark-border:before {
+            border: 1px solid #2cf156;
+        }
+
+        .exp-option-box {
+            display: none;
+        }
+
+        .job-wizard-right-area .checkmark-border:after {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <ul style="display: flex;">
+            <li style="display: flex;align-items: center;">
+                <label class="head">Gender:</label>
+                <label class="radio-btn">
+                    <input type="radio" name="specs_1" value="The art of Networking" class="exp-option-box"
+                        checked="checked">
+                    <span class="">Male</span>
+                    <span class="checkmark-border"></span>
+                </label>
+            </li>
+            <li style="display: flex;">
+                <label class="radio-btn">
+                    <input type="radio" name="specs_1" value="Verbally Communicate" class="exp-option-box">
+                    <span class="">Female</span>
+                    <span class="checkmark-border"></span>
+                </label>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radio {
+            position: relative;
+        }
+
+        .radio1 {
+            display: none;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+
+        .radio:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .radio input:checked~.checkmark:after {
+            display: block;
+        }
+
+        .radio .checkmark:after {
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #9a1b22;
+        }
+
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        h4 {
+            margin: 2rem 0rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="radio" style="margin:30px;">
+        <label style="margin:30px;">
+            <input type="radio" class="radio1" name="radio-input" checked="checked"> Radio1
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="radio" style="margin:30px;">
+        <label style="margin:30px;">
+            <input type="radio" class="radio1" name="radio-input"> Radio2
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Toggle this first option</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Or toggle this second option</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

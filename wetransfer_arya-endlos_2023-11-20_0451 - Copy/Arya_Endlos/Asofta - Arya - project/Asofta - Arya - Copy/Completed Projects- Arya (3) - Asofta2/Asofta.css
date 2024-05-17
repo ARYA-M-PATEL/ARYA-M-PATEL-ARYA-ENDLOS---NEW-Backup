@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.asofta_general_maintance{
+    background-color: #FAFFE9 ;
+    /* max-height: 1920px; */
+    min-height: 1920px;
+    max-width: 1080px;
+    margin: 0 auto;
+    /* border: 3px solid black; */
+    color: #464747;
+
+}
+.top_portion{
+    display: flex;
+}
+.logo img{
+    margin: 20px 0px 0px 30px;
+}
+.top_title{
+    margin: auto;
+}
+.heading_portion{
+    background-color: rgb(199, 203, 206);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 325px;
+    padding: 5px 0px;
+    text-align: center;
+}
+.top_heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+.line{
+    height: 5px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #464747;
+    border-top-right-radius: 60px;
+}
+
+/* ========button_portion======== */
+.button_portion{
+    display: flex;
+    margin: 30px 0px 0px 80px;
+}
+.access_btn_portion{
+    display: flex;
+    width: 100%;
+    align-items: center; 
+}
+.access_btn_img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.access_btn_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f3f5eb;
+    padding: 3px;
+}
+
+.access_btn .btn{
+    width: 120PX;
+    height: 100%;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #A8BF3D;
+    border: none;
+    border-radius: 5px;
+}
+
+ /* ===============Machine parts=========== */
+.machine_parts{
+    border: 3px solid #A8BF3D;
+    margin: 30px 40px 40px 40px ;
+    border-radius: 17px;
+}
+.machine_portion{
+    display: flex;
+    margin-top: 20px;
+}
+.machine_parts_portion{
+    text-align: center; 
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+}
+.machine_parts_portion .m_parts_name{
+     font-size: 25px;
+     font-weight: 700;
+}
+.m_parts_access{
+    border-right: 3px solid #A8BF3D;
+    margin: 50px 0px;
+}
+.m_parts_access_2{
+    margin: 50px 0px;
+}
+.machine_image_btn{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+}
+.machine_image_btn .m_img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    left: 50px;
+    bottom: 27px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 2px 1px 0px;
+    border-radius: 50%;
+}
+.machine_image_btn .m_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.print_paper_m_img {
+ top: -40px;
+}
+.notification_img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right:3px;
+    top: 5px;
+}
+.notification_img img{
+    width: 20PX;
+    z-index: 3;
+    border-radius: 50%;
+}
+.process_button_text{
+    width: 80%;
+    margin-bottom: 25px;   
+}
+.process_button{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border: 3px solid #A8BF3D;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px;
+    padding: 3px 0px;
+
+}
+.process_button .p_btn{
+    margin: auto;
+    border-radius: 50%;
+}
+.p_btn .btn{
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    border-radius: 50%;
+}
+.p_btn .btn img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+}
+.error_btn{
+    display: flex;
+    gap: 115px;
+    /* justify-content: space-around; */
+}
+.m_text{
+    font-size: 15px;
+    font-weight: 700;
+}
+.error_btn1{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+    right: 35px;
+}
+.error_btn2{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+    left: 47px;
+}
+.error_btn3{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+    right: 50px;
+}
+.error_btn4{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+    left: 50px;
+}
+.common{
+    border-bottom: 2px solid #A8BF3D;
+}
+.storage_count{
+    width: 70%;
+}
+.storage_number{
+    font-size: 25px;
+}
+.plastic_storage_count{
+    color: #C70E0E;
+}
+.setting_button .tech_mode_btn{
+    width: 90%;
+    margin: auto;
+}
+.setting_button .tech_mode_btn .btn{
+    width: 95%;
+    padding: 15px 0px;
+    background-color: #A8BF3D;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+.machine_image_btn .setting_img{
+    bottom: 10px;
+    display: flex;
+    padding: 7px;
+}
+.machine_image_btn .setting_img img{
+    display: flex;
+    opacity: 100%;
+
+}
+
+.touch:hover{
+    background: #647224;
+    opacity: 100%;
+}
+.tech_mode_btn .touch:hover{
+    background: #647224;
+
+}
+.button_on:hover{
+    opacity: 50%;
+    transition: all 0.5s;
+}

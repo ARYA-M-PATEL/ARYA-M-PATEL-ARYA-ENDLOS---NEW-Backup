@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <style>
+                .container{
+                    border: 2px solid black;
+                    margin: 10px auto;
+                    padding: 10px; 
+                    /* direction: rtl;  */
+                }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 py-3">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Lorem ipsum</li>
+                        <li class="list-group-item">Lorem ipsum</li>
+                        <li class="list-group-item">Lorem ipsum</li>
+                        <li class="list-group-item">Lorem ipsum</li>
+                        <li class="list-group-item">Lorem ipsum</li>
+                    </ul>
+                </div>
+                <div class="col-sm-7 py-3">
+                    <ul class="list-group list-group-horizontal">
+                        <a href class="list-group-item list-group-item-action">
+                            Lorem ipsum</a>
+                        <a href class="list-group-item list-group-item-action">
+                            Lorem ipsum</a>
+                        <a href class="list-group-item list-group-item-action">
+                            Lorem ipsum</a>
+                        <a href class="list-group-item list-group-item-action">
+                            Lorem ipsum</a>
+                        <a href class="list-group-item list-group-item-action">
+                            Lorem ipsum</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <table class="col-6 table table-bordered">
+                    <thead class="thead-dark">
+                        <th>1</th>
+                        <th>first</th>
+                        <th>second</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>first</td>
+                            <td>second</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>first</td>
+                            <td>second</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table class="col-5 table table-dark ml-5 table-borderless">
+                    <thead>
+                        <th>1</th>
+                        <th>first</th>
+                        <th>second</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>first</td>
+                            <td>second</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>first</td>
+                            <td>second</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="m-auto">
+                <ul class="pagination pagination-lg justify-content-center">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">next</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="container p-3" style="border: 2px solid black;">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="name" class="mr-3">NAME:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control-plaintext"
+                            value="abc123@gmail.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="mr-3">Contry:</label>
+                        <select class="form-control">
+                            <option value>india</option>
+                            <option value>usa</option>
+                            <option value>uk</option>
+                            <option value>india</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="mr-3">NAME:</label>
+                        <textarea name id cols="50" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for>Name</label>
+                        <input type="range" class="form-control">
+                    </div>
+                    <div>
+                        <label for>checkbox</label>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input"
+                                id="maleCheck">
+                            <label for="maleCheck" class="form-check-lable">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input"
+                                id="femaleCheck">
+                            <label for="femaleCheck" class="form-check-lable">feMale</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for>Gender</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-chech-input"
+                                name="Gender">
+                            <label for class="form-check-lable">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-chech-input"
+                                name="Gender">
+                            <label for class="form-check-lable">feMale</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col p-3">
+                    <div class="form-check form-check">
+                        <input type="checkbox" class="form-check-input"
+                            id="musicCheck">
+                        <label for="musicCheck"
+                            class="form-check-lable form-control-label">Music</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input type="checkbox" class="form-check-input"
+                            id="sportCheck">
+                        <label for="sportCheck"
+                            class="form-check-lable form-control-label">Sport</label>
+                    </div>
+                    <div class="form-check form-check ">
+                        <input type="checkbox" class="form-check-input" disabled
+                            id="hobbiesCheck">
+                        <label for="hobbiesCheck"
+                            class="form-check-lable form-control-label" disabled>Hobbies</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action class="container">
+            <div class="form-group row">
+                <lable class="col-sm-2 col-form-lable-sm">User Name</lable>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <lable class="col-sm-2 col-form-lable-sm">Password</lable>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                        Save
+                    </button>
+                </div>
+            </div>
+
+            <select name class="custom-select" id multiple size="3">
+                <option value>India</option>
+                <option value>India</option>
+                <option value>India</option>
+                <option value>India</option>
+                <option value>India</option>
+                <option value>India</option>
+            </select>
+            <div class="row">
+                <div class="col">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input">
+                        <label for class="custom-file-lable">Name</label>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="range" class="custom-range">
+                </div>
+                <div class="col">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input">
+                        <label for class="custom-file-label">Choose File</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customcheckbox1">
+                        <label for="customcheckbox1"
+                            class="custom-control-label">music</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customcheckbox2">
+                        <label for="customcheckbox2"
+                            class="custom-control-label">music</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customcheckbox3">
+                        <label for="customcheckbox3"
+                            class="custom-control-label">music</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input"
+                            id="customcheckbox4" name="Gender">
+                        <label for="customcheckbox4"
+                            class="custom-control-label">music</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customcheckbox5" name="Gender">
+                        <label for="customcheckbox5"
+                            class="custom-control-label">music</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customcheckbox7" name="Gender">
+                        <label for="customcheckbox7"
+                            class="custom-control-label">music</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input"
+                            id="customcheckbox8" name="Gender">
+                        <label for="customcheckbox8"
+                            class="custom-control-label">music</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control is-valid"
+                                placeholder="Enter Name">
+                            <div class="valid-tooltip">Good</div>
+
+                        </div>
+                        <div class="form-group ml-5">
+                            <input type="password"
+                                class="form-control is-invalid"
+                                placeholder="Enter password">
+                            <div class="invalid-tooltip">enter valid password</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <input type="checkbox" class="input-group-text "
+                                    name id="abcd">
+                            </span>
+                        </div>
+
+                        <input type="number" class="form-control">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <input type="radio" class="input-group-text"
+                                    name id="abcd">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button
+                                class="btn-primary dropdown-toggle dropdown-toggle-splite"
+                                data-toggle="dropdown"></button>
+                            <div class="dropdown-menu bg-info">
+                                <a href class="dropdown-item">First</a>
+                                <a href class="dropdown-item">First</a>
+                                <a href class="dropdown-item">First</a>
+                                <a href class="dropdown-item">First</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@yahoobaba.net</span>
+                        </div>
+                        <input type="number" class="form-control">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">000</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@yahoobaba.net</span>
+                            <div class="input-group-uppend">
+                                <button>Submit</button>
+                                <button
+                                    class="btn-primary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown"></button>
+                                <div class="dropdown-menu bg-info">
+                                    <a href class="dropdown-item">First</a>
+                                    <a href class="dropdown-item">First</a>
+                                    <a href class="dropdown-item">First</a>
+                                    <a href class="dropdown-item">First</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control"
+                id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav  justify-content-strat">
+                        <li class="nav-item ">
+                            <a href class="nav-link disabled">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href class="nav-link">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a href class="navbar-brand">Endlos</a>
+
+                        <button class="navbar-toggler" data-toggle="collapse"
+                            data-target="#mynavbar">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href
+                                        class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown">About
+                                        us</a>
+                                    <div class="dropdown-menu">
+                                        <a href class="dropdown-item">first</a>
+                                        <a href class="dropdown-item">first</a>
+                                        <a href class="dropdown-item">first</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href class="nav-link">gallery</a></li>
+                                <li class="nav-item"><a href class="nav-link">contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/0GOgPRxbcNc?si=IYRqtHSmMWcx4x9u"
+                            frameborder="0"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde rem cumque sit itaque commodi perferendis, dolorem illum architecto, maiores nihil consequuntur consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+           <div class="card">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                                    class="card-img">
+                    </div>
+                    <div class="col-md-8">
+                       <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                       </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis obcaecati
+                                totam nobis officia asperiores quisquam quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis obcaecati
+                                totam nobis officia asperiores quisquam quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img-bottom">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde rem cumque sit itaque commodi perferendis, dolorem illum architecto, maiores nihil consequuntur consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Debitis
+                                obcaecati
+                                totam nobis officia asperiores quisquam
+                                quaerat,
+                                expedita saepe nesciunt velit!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Figma_p_images/bill gates.jpg" alt
+                            class="card-img">
+                        <div class="card-img text-info">
+                            <h4 class="card-title">
+                                Card Title
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                                
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3 align-self-end">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing dipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>  
+                                <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                                
+                        </div>
+                    </div> 
+                        </div>
+                        
+                    </div>
+                    <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                                <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                               <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                                <div class="media">
+                        <img src="./Asofta Original images/user img.png" height="100px" width="100px" alt="" class="mr-3">
+                        <div class="media-body">
+                            <h5>Endlos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde re
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor sit amet consectetur adipisicing elit. Unde reLorem ipsum dolor  consequatur quo ducimus quasi voluptatem ipsum animi aliquid suscipit.</p>
+                                
+                        </div>
+                    </div>
+                        </div>
+                    </div> 
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

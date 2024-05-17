@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.container {
+  border: 2px solid red;
+}
+.wave-line {
+  /* overflow: hidden; */
+  /* margin-top: 100px; */
+}
+.wave-line a {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #00aeff;
+  font-size: 20px;
+  position: relative;
+  border: solid 2px #00aeff;
+  height: 200px;
+  overflow: hidden;
+}
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: calc(100% + 50px);
+  /* top: -100%; */
+  left: 0;
+  transition: all 1s;
+  z-index: -1;
+  text-decoration: none;
+}
+.wave::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/wavy.png");
+  background-size: cover;
+  top: -5px;
+  animation: wavy 1s linear infinite;
+}
+@keyframes wavy {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+a:hover .wave {
+  top: 0;
+}
+a:hover {
+  color: black;
+}
+.bg-color-effect h1{
+  color: white;
+}
+.bg-color-effect {
+  width: 100%;
+  height: 500px;
+  animation: changeBg 10s linear infinite;
+  display: grid;
+  place-items: center;
+  /* background-color: red; */
+}
+
+@keyframes changeBg {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: green;
+  }
+  40% {
+    background-color: blue;
+  }
+  60% {
+    background-color: gray;
+  }
+  80% {
+    background-color: rgb(0, 217, 255);
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.bouncing-ball {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  place-items: center;
+}
+.bouncing-ball ul {
+  display: flex;
+  width: 80%;
+  border-bottom: 10px solid black;
+}
+.bouncing-ball ul li {
+  height: 40px;
+  width: 40px;
+  list-style: none;
+  background-color: royalblue;
+  margin: auto 20px;
+  border-radius: 50%;
+  animation: boucing 1s linear infinite;
+}
+
+@keyframes boucing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bouncing-ball ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncing-ball ul li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bouncing-ball ul li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bouncing-ball ul li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+nav {
+  height: 100px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin: 30px;
+}
+nav ul li a {
+  color: yellow;
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+}
+nav ul li a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s;
+  transform-origin: left;
+  top: 0;
+  left: 0;
+  border-top: 2px solid yellow;
+  border-left: 2px solid yellow;
+}
+nav ul li a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s;
+  transform-origin: left;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+.open_border ul li a:hover:after,
+.open_border ul li a:hover:before {
+  color: yellow;
+  width: 15%;
+  height: 20%;
+  transform: rotate(360deg);
+}
+
+.colse_border ul li a::before {
+  content: "";
+  width: 15%;
+  height: 20%;
+  position: absolute;
+  transition: all 0.3s;
+  transform-origin: left;
+  top: 0;
+  left: 0;
+  border-top: 2px solid yellow;
+  border-left: 2px solid yellow;
+}
+.colse_border ul li a::after {
+  content: "";
+  width: 15%;
+  height: 20%;
+  position: absolute;
+  transition: all 0.3s;
+  transform-origin: left;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+.colse_border ul li a:hover:after,
+.colse_border ul li a:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 630px;
+  transition: all 2s;
+}
+.card :hover {
+  height: 100%;
+}
+
+.img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+}
+/* .img-box:hover {
+  transform: translateY(-60px);
+} */
+.img-box img {
+  height: 100%;
+  width: 100%;
+}
+.content {
+  width: 200px;
+  text-align: center;
+  transform: translateY(-250px);
+  opacity: 0;
+  transition: 2s;
+}
+.content:hover {
+  transform: translateY(100px);
+  opacity: 1;
+  transition: 1s;
+}

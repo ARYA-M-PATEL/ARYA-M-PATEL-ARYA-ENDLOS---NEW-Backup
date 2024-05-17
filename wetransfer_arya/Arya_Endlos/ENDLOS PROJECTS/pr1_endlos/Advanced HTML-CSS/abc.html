@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="col-md-12"
+            style="height:100px; border:2px solid red; display: flex;justify-content: space-between;align-items:center;">
+            <form
+                action="http://localhost/fba-dms-do/register/hr_compliance/risk_assessed_role"
+                method="post"><div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="date_from">Location</label>
+                            <select name="location" class="form-control"
+                                onchange="this.form.submit();">
+                                <option value="-1" selected>All Locations</option>
+                                <option value="4">ABC</option>
+                                <option value="0">VIC</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <a href="#"
+                    class="mainBtn btn-export-excel float-right ml-2"
+                    data-type="risk_assessed_role">
+                    <i class="fa fa-download" aria-hidden="true"></i> Export
+                    Excel
+                </a>
+                <a
+                    href="http://localhost/fba-dms-do/register/risk_assessed_role_create"
+                    class="mainBtn float-right">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add New
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

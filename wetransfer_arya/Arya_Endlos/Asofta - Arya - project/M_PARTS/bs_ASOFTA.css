@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.m_part{
+    margin: 0;
+    border: 2px solid black;
+}
+
+.parts_list{
+    padding: 10px;
+    list-style: none;
+    background-color: #FAFFE9;   
+}
+.top_portion{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.head_name{
+    width: 100%;
+}
+.h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.sensor{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.sensor .btn{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    border-radius: 50%;
+}
+.round{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.round:hover {
+    border: none;
+    background-color: #c6f52e;
+}
+.sens_text{
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+}
+.img_btn_portion{
+    display: flex;
+    position: relative;
+    height: 100px;
+    align-items: center;
+}
+.img_btn_portion .m_img{
+    position: absolute;
+    z-index: 1;
+}
+.img_btn_portion .m_img img{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px;
+}
+.button_list_portion{
+
+}
+.col-6{
+    padding: 5px 10px ;
+    margin: 0;
+}
+.button-list{
+    box-shadow: 0px 2px 2px 2px;
+    width: calc(100% - 50px);
+    right: 5px;
+    position: absolute;  
+    transform: translateY(-50%);
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+}
+.button-list .btn{
+    margin: auto;
+    padding: 0;
+}
+.button-list .btn img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.m_text{
+    text-align: center;
+    
+}
+.text{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.r_btn{
+    display: flex;
+    padding: 10px;
+}
+.resolve_btn{
+    margin: auto;
+}
+.resolve_btn .btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    background-color: #A8BF3D;
+    border: none;
+    border-radius: 20px;
+}
+.resolve_btn .btn a{
+    color: white;
+    /* padding: 0px 10px; */
+    text-decoration: none;
+}

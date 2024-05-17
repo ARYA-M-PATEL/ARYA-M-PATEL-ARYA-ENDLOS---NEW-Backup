@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            *{
+  padding: 0;
+  margin: 0;
+  }
+
+body
+  font-family: 'Montserrat', sans-serif
+
+.filter-option
+  padding: 30px 0 0
+  margin-bottom: 30px
+  text-align: center
+  li
+    display: inline-block
+    list-style: none
+    + li
+      margin-left: -5px
+    a
+      display: inline-block
+      min-width: 150px
+      font:
+        size: 16px
+        weight: 600
+      color: #000
+      text-decoration: none
+      text-align: center
+      background: transparent
+      padding: 15px 0
+      border-right: 1px solid #e5e5e6
+      border-bottom: 2px solid #a9a9ab
+      &.active
+        background: #967540 
+        color: #ffffff
+        border-color: #80602d
+    &:last-of-type
+      a
+        border-right: none   
+
+.item-slider
+  li
+    margin: 0 15px
+    img
+      width: 100%
+
+.slider-controls
+  margin-top: 30px
+  text-align: center
+  span
+    display: inline-block
+    font-size: 20px
+    width: 40px
+    height: 40px
+    line-height: 40px
+    background: transparent
+    border: 1px solid #8b6932
+    color: #8b6932
+    cursor: pointer
+    margin: 0 5px
+    transition: all 0.3s linear
+    &:hover
+      background: #8b6932
+      color: #ffffff
+      border-color: #8b6932
+    
+        </style>
+    </head>
+    <body>
+        <div>
+            ul(class="filter-option")
+            li
+            a( href="javaScript:void(0)" class="active" data-category="All".toLowerCase())=
+            'All'.toUpperCase()
+            li
+            a( href="javaScript:void(0)" data-category="PANDA".toLowerCase())=
+            'Panda'.toUpperCase()
+            li
+            a( href="javaScript:void(0)" data-category="dog".toLowerCase())=
+            'Dog'.toUpperCase()
+            li
+            a( href="javaScript:void(0)" data-category="cat".toLowerCase())=
+            'cat'.toUpperCase()
+
+            div(class="slider-wrapper")
+            ul(class="item-slider")
+            - var category = ['panda', 'panda', 'panda', 'panda', 'panda', 'dog',
+            'dog', 'dog', 'dog', 'dog', 'cat', 'cat', 'cat', 'cat', 'cat'];
+            - var imgs = ['img-1.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg',
+            'img-5.jpg', 'img-6.jpg', 'img-7.jpg', 'img-8.jpg', 'img-9.jpg',
+            'img-10.jpg', 'img-11.jpg', 'img-12.jpg', 'img-13.jpg', 'img-14.jpg',
+            'img-15.jpg',];
+
+            - for(a=0; a<imgs.length; a++)
+                li(data-match+category[a]+"".toLowerCase())
+                img(src="https://webtechball.files.wordpress.com/2017/11/"+imgs[a]+"")
+                div(class="slider-controls" )
+                span(class="prevSlide" )
+                i(class="fa fa-long-arrow-left" )
+                span(class="nextSlide" )
+                i(class="fa fa-long-arrow-right" )
+                </div>
+            </body>
+        </html>

@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.asofta_general_maintenance {
+  background-color: #faffe9;
+  min-height: 1920px;
+  max-width: 1080px;
+  /* min-height: 1280px; */
+  /* max-height: 1920px; */
+  /* max-height: 1920px; */
+  /* max-width: 768px; */
+  margin: 0 auto;
+  border: 3px solid #000000;
+  color: #464747;
+}
+
+.asofta_action_portion {
+  position: relative;
+  display: flex;
+  max-width: 85%;
+  margin: 15px auto 0px;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.action_btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.action_btn_img {
+  width: 75px;
+  height: 75px;
+  z-index: 10;
+}
+
+.action_btn_img img {
+  width: 100%;
+  border-radius: 50%;
+  background-color: #f3f5eb;
+  padding: 3px;
+}
+
+.action_btn_text {
+  width: 75%;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #a8bf3d;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 63px;
+  text-align: center;
+}
+
+.action_btn_text a {
+  display: flex;
+}
+
+/* ===============Machine parts=========== */
+.asofta_machine_parts {
+  border: 3px solid #a8bf3d;
+  margin: 60px 30px 30px 30px;
+  border-radius: 17px;
+  text-align: center;
+}
+
+.machine_portion {
+  display: flex;
+}
+
+.common {
+  border-bottom: 2px solid #a8bf3d;
+}
+
+.machine_parts_portion {
+  text-align: center;
+  width: 50%;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+}
+
+.m_parts_access {
+  border-right: 3px solid #a8bf3d;
+  margin: 50px 0 50px 23px;
+}
+/* .m_parts_access_2 {
+  margin: 70px 0 50px 23px;
+} */
+
+.machine_image_btn {
+  width: 100%;
+  display: flex;
+  margin: 20px auto 0px;
+  align-items: center;
+  position: relative;
+}
+
+.machine_image_btn .m_img {
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px 2px 1px 0px;
+  border-radius: 50%;
+}
+
+.machine_image_btn .m_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.machine_image_btn .m_img2 {
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px 2px 1px 0px;
+  border-radius: 50%;
+}
+
+.machine_image_btn .m_img2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.process_button {
+  position: absolute;
+  width: 81%;
+  display: flex;
+  margin: auto;
+  left: 74px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 2px 2px 2px;
+  padding: 4px 0px;
+}
+
+.process_button .p_btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.process_button .p_btn img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+}
+
+.input_bar {
+  z-index: 2;
+  position: absolute;
+  left: 104px;
+}
+
+.input_bar input {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  height: 35px;
+  width: 180px;
+}
+
+.machine_image_btn .error_btn {
+  gap: 130px;
+}
+
+.lce_btn1 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  left: 120px;
+  top: 83px;
+}
+
+.lce_btn2 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  right: 55px;
+  top: 83px;
+}
+
+.entry_sensor {
+  width: 90%;
+  display: flex;
+  margin: 15px auto;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 2px;
+  padding: 4px 0px;
+}
+
+.door_sensor {
+  width: 80%;
+  display: flex;
+  margin: 21px auto 22px;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 2px;
+  padding: 4px 0px;
+}
+
+.round {
+  border: 2px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #faffe9;
+}
+
+.round1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #a8bf3d;
+}
+
+.round:hover {
+  background-color: #a8bf3d;
+  border: none;
+}
+
+.round1:hover {
+  background-color: red;
+}
+
+.sensor_btn1 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  left: 65px;
+  top: 76px;
+}
+
+.sensor_btn2 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 76px;
+  left: 205px;
+}
+
+.sensor_btn3 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 76px;
+  right: 55px;
+}
+
+.door_sens_portion {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.d_sens {
+  width: 100%;
+}
+
+.sensors {
+  display: flex;
+  gap: 10%;
+  left: 7px;
+}
+
+.ftd_text {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  left: 57px;
+  top: 84px;
+}
+
+.bd_text {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 84px;
+  right: 65px;
+}
+
+.emergency_switch {
+  width: 50%;
+  position: relative;
+  left: 109px;
+}
+
+.em_btn {
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.ems_text {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 83px;
+  left: 60px;
+}
+
+.parts_head_portion {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.fd_text {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+}
+
+.resolve_btn {
+  margin: 20px 0px 35px 0px;
+  left: 8%;
+}
+
+.resolve_btn .btn {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 30px;
+  background-color: #a8bf3d;
+  border: none;
+  border-radius: 20px;
+}
+
+.Shredder_part {
+  margin-left: -20px;
+}
+
+.sort_sens {
+  position: relative;
+  left: 11px;
+}
+
+.sorter_sens {
+  display: flex;
+  gap: 80px;
+}
+
+.gs_btn1 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 76px;
+  left: 47px;
+}
+
+.gs_btn2 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 76px;
+  right: 52px;
+}
+
+.flap_error_1 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 76px;
+  left: 98px;
+}
+
+.flap_error_2 {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 76px;
+  right: 12px;
+}
+
+.storage_name {
+  padding-top: 20px;
+}
+
+.storage_count {
+  width: 70%;
+}
+
+.storage_number {
+  font-size: 25px;
+}
+
+.error_storage_number {
+  color: #c70e0e;
+  font-size: 25px;
+}

@@ -1,0 +1,25 @@
+
+!function (a,e,t,n) {function gtag(){dataLayer.push(arguments)}var r,d;(d=e.createElement(t)).src="//www.googletagmanager.com/gtag/js?id=AW-14242",d.async=1,d.onload=d.onreadystatechange=function(){var a=this.readyState;a&&"loaded"!==a&&"complete"!==a||(d.onload=d.onreadystatechange=null)},(r=e.getElementsByTagName(t)[0]).parentNode.insertBefore(d,r),a.dataLayer=a.dataLayer||[],gtag("js",new Date),gtag("config","AW-14242",{"allow_enhanced_conversions": true})}(window,document,"script");
+
+
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_hm=bUy87EQQEkSt_Sl_3l9bfA&google_nid=sojern_adh');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    

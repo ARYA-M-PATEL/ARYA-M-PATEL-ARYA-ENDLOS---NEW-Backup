@@ -1,0 +1,249 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+overflow:visible;
+}
+body{
+    /* direction: rtl; */
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+.section{
+    padding: 70px 0px 70px 0px;
+}
+.section h2.section-head{
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section h2.section-head:after{
+    background: #e74c3c;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+.header{
+    color: white;
+    background-color: #e74c3c;
+}
+#logo{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: end;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+}
+#menu li a:hover{
+    background-color: #c0392b;
+}
+.banner{
+    background: url('./Figma_p_images/photo-1683009427540-c5bd6a32abf6.avif') no-repeat;
+    background-size: cover;
+}
+.banner-title{
+    padding-top: 5rem;
+    margin-bottom: 50px;
+}
+.banner-title .title{
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.banner-title p.lead{
+    color: #ffffff;
+    background:rgba(311, 76,60,0.7);
+    padding: 10px;
+}
+.service-box{
+    text-align: center;
+}
+.service-box i{
+    color: #e74c3c;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.testimonials{
+   background: url('./Figma_p_images/testimonials-bg-fallback.jpg') no-repeat;
+   background-size: cover;
+   padding: 50px 0px;
+   position: relative;
+   /* border: 2px solid red; */
+   text-align: center;
+}
+.testimonials:before{
+    background:rgba(52,53,94,0.3);
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    /* height: 100%; */
+    /* width: 100%; */
+}
+.testimonials .testimonial img{
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+}
+.testimonial{
+    font-size: 20px;
+    font-weight: bold;
+}
+.news-post{
+    padding-left: 30px;
+}
+.news-post img{
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.news-post h3{
+    font-size: 20px;
+}
+.news-post a{
+    text-decoration: none;
+    padding: 3px;
+    color: red;
+}
+.post-date{
+    font-size: 14px;
+}
+.post-date:before{
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+.readmore{
+    font-size: 18px;
+    font-weight: 700;
+}
+.readmore:after{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+.footer{
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 10px;
+}
+.footer-widget h4:after{
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: 5px;
+}
+.footer-widget a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-widget .news_link{
+    list-style: none;
+    padding: 0;
+}
+.footer-widget .news_link li{
+    margin-bottom: 3px;
+}
+.footer-widget .news_link li:before{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 10px;
+    color: #fff;
+}
+.main_footer{
+    color: #fff;
+    background-color: #c0392b;
+    padding: 3px 0px;
+}
+.main_footer .mf_items{
+    align-items: center;    
+}
+.social_icon{
+   color: #fff;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   text-align: end;
+}
+.social_icon li{
+    display: inline-block;
+    padding-left: 5px;
+}
+.social_icon li a{
+    color: #fff;
+    font-size: 23px;
+}
+
+@media (max-width:992px){
+    .section{
+        padding: 20px 0px 20px 0px;
+        /* padding: 70px 0px 70px 0px; */
+    }
+    .news-post{
+        margin-bottom: 20px;
+    } 
+    .news-post p{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width:768px){
+    #logo{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    #menu{
+        text-align: center;  
+    }
+    .section{
+        padding: 30px 0px 30px 0px;
+    }
+    .banner-title{
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .testimonial{
+        margin-bottom: 30px;
+    }
+    .testimonial p{
+        margin: 0;
+    }
+     .news-post{
+        margin-bottom: 20px;
+    } 
+     .news-post p{
+        margin: 0;
+        padding: 0;
+    }
+     .footer-widget{
+        margin-bottom: 30px;
+    }
+     .main_footer{
+        text-align: center;
+    }
+    .social_icon{
+        text-align: center;
+    }
+}

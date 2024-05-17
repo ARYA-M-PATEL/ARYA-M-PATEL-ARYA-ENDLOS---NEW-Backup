@@ -1,0 +1,83 @@
+
+I have Done Projects In Endlos 
+
+	1 (1)Asofta html , css
+	  (2)Asofta bootstrap
+
+	2 E.visa Form
+	3 rice brand
+	4 add social media Icon in one endlos innovation login page
+	5 service web site
+	6 endlos furniture  : https://www.endlos.furniture/
+	7 jd gurus : https://www.endlos.tech/jdgurus/
+	also make Some Practice Projects 
+	
+
+
+
+
+
+
+===================Arya Javascript====================
+namste javascript
+chai our code js
+learn vern
+
+best json formatter   use for convert API in formate
+
+
+json formatter is a convert api in a formate
+
+
+					COMMANDS FOR GITHUB
+	   [
+
+           **********…or create a new repository on the command line ***************
+
+           echo "# abcd" >> README.md
+           git init
+	   git add README.md
+	   git commit -m "first commit"
+	   git branch -M main
+	   git remote add origin https://github.com/ARYA-M-PATEL/arya.git
+	   git push -u origin main
+
+           **************…or push an existing repository from the command line***********
+           git remote add origin git@github.com:aryapatel2003/learning_codes.git
+           git branch -M main
+           git push -u origin main
+
+           ]
+
+
+
+	cammonds for :: add changes in exiting project on js
+{
+	[
+	git add .
+	git status
+	git commit -m "added changes"
+	git push origin main / master
+	] OR 
+	
+	click on commit button and synnce button
+}
+
+learn :: JQUERY
+learn various graphics tools like "canva" "Ai(adobe illustrator)"
+
+get daily updates of HTML , CSS ,BOOTSTRAP, JS .....etc
+
+
+
+				***** Question for Preparation *****
+	Types of tag :1-Paired and Unpaired Tags 
+
+[Paired Tags--
+An HTML tag is known as a paired tag when the tag consists of an opening tag and a closing tag as its companion tag. An HTML Paired tag starts with an opening tag: the tag name enclosed inside the angle brackets; for example, a paragraph opening tag is written as ‘<p>’. The content follows the opening tag, which ends with an ending tag: the tag name starting with a forward slash; for example, an ending paragraph tag is written as ‘</p>’. The first tag can be referred to as the ‘Opening Tag’, and the second tag can be called Closing Tag.]
+
+[Unpaired Tags--
+An HTML tag is called an unpaired tag when the tag only has an opening tag and does not have a closing tag or a companion tag. The Unpaired HTML tag does not require a closing tag; an opening tag is sufficient in this type. Unpaired tags are sometimes also named as Standalone Tags or Singular Tags since they do not require a companion tag.]
+
+
+

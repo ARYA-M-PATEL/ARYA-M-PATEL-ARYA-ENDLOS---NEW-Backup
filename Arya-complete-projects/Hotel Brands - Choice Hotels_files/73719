@@ -1,0 +1,43 @@
+
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://ad.doubleclick.net/ddm/activity/src=4897197;type=sales;cat=izpk497c;qty=1;cost=0;u1=;u16=%253Fp%253Dwww.choicehotels.com%252Fquality-inn%2526hpid%253D%2526sha256_eml%253D%2526ccid%253D7RBRNDMGFx9lG_u3ntUW7.%2526hd1%253D%2526hd2%253D%2526hc1%253D%2526hs1%253D%2526hn1%253D%2526t%253D1%2526hr%253D1%2526hd%253D0%2526hpr%253D%2526hb%253D%2526hp%253D%2526hconfno%253D%2526ffl%253Dno%2526hl%253D%2526hdc%253D%2526hcu%253D%2526pt%253DHome%252520Page%252520-%252520quality%2526shell%253DUS;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=[OrderID]');\
+    document.body.appendChild(i);\
+    ";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_hm=bUy87EQQEkSt_Sl_3l9bfA&google_nid=sojern_adh');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    
